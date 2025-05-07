@@ -73,7 +73,7 @@ FROM SankrantiSales;
 
 -- Logic: Calculate percentage change in quantity sold and rank categories.
 
--- 6. Top 5 Products by IR%
+-- 6. Top 5 Products by IR%. [Note: IR% measures revenue growth due to promotions.]
 WITH RevenueCalculation AS (
   SELECT 
     p.product_name,
@@ -92,5 +92,5 @@ FROM RevenueCalculation
 ORDER BY `ir%` DESC
 LIMIT 5;
 
--- Note: IR% measures revenue growth due to promotions.
+
 

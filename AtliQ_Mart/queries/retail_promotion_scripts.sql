@@ -8,11 +8,6 @@ FROM fact_events e
 JOIN dim_campaigns c ON e.campaign_id = c.campaign_id
 GROUP BY c.campaign_name;
 
-
-SELECT * FROM fact_events;
-SELECT * FROM dim_campaigns;
-SELECT * FROM dim_products;
-
 -- promotion_type_effectiveness.sql
 -- Uplift by promotion type
 SELECT 
