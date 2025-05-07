@@ -69,9 +69,9 @@ ORDER BY total_sales_after_promo DESC;
 
 -- Revenue Impact Per Campaign
 SELECT dc.campaign_name, 
-    ROUND(SUM(fe.base_price * `fe`.`quantity_sold(before_promo)`), 2) AS revenue_before,
-    ROUND(SUM(fe.base_price * `fe`.`quantity_sold(after_promo)`), 2) AS revenue_after,
-    ROUND(SUM(fe.base_price * (`fe`.`quantity_sold(after_promo)` - `fe`.`quantity_sold(before_promo)`)), 2) AS revenue_lift
+    ROUND(SUM(fe.base_price * fe.`quantity_sold(before_promo)`), 2) AS revenue_before,
+    ROUND(SUM(fe.base_price * fe.`quantity_sold(after_promo)`), 2) AS revenue_after,
+    ROUND(SUM(fe.base_price * (fe.`quantity_sold(after_promo)` - fe.`quantity_sold(before_promo)`)), 2) AS revenue_lift
 FROM fact_events fe
 JOIN dim_campaigns dc ON fe.campaign_id = dc.campaign_id
 GROUP BY dc.campaign_name;
