@@ -1,8 +1,7 @@
 # Ad-Hoc-Insights
 
-![Consumer Goods SQL Project (1)](https://github.com/srinathankolla/Ad-Hoc-Insights/assets/115559003/09e17a3b-83fa-4343-b6a3-86b292d3485f)
 
-[Link to Presentation](https://youtu.be/pViY7of-tSk?si=wzGiuRZOCnJFVu_S)
+[Link to Presentation](https://youtu.be/pViY7of-tSk?siuRZOCnJFVu_S)
 
 Domain : Consumer Goods
 
