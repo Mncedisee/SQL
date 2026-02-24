@@ -1,8 +1,5 @@
 # Ad-Hoc-Insights
 
-
-[Link to Presentation](https://youtu.be/pViY7of-tSk?siuRZOCnJFVu_S)
-
 Domain : Consumer Goods
 
 Function : Excecutive Management
